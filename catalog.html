@@ -7,154 +7,174 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body class="page-body-inner-page">
-    <header class="header-inner-page">
-      <nav class="navigation-inner-page">
-        <a class="header-logo">
-          <img src="img/favicons/nerds-logo.svg" width="159.87" height="48.75" alt="Логотип Нёрдс">
-        </a>
-        <ul class="site-navigation-inner-page">
-          <li><a href="blank.html">Студия</a></li>
-          <li><a href="blank.html">Клиенты</a></li>
-          <li><a class="active" href="catalog.html">Магазин</a></li>        
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
-          <img src="img/favicons/cart.svg" width="15" height="11" alt="Корзина">
-          <a class="cart" href="#">Корзина</a>
-        
-      </nav>
-    </header>
+  <header class="header-inner-page">
+      <div class="page-width">
+
+
+          <nav class="navigation">
+              <div class="header-left-column">
+                  <a class="header-logo">
+                      <img src="img/favicons/nerds-logo.svg" width="159.87" height="48.75" alt="Логотип Нёрдс">
+                  </a>
+              </div>
+              <div class="header-center-column">
+                  <ul class="site-navigation">
+
+                      <li><a href="blank.html">Студия</a></li>
+                      <li><a href="blank.html">Клиенты</a></li>
+                      <li><a class="active" href="catalog.html">Магазин</a></li>
+                      <li><a href="blank.html">Контакты</a></li>
+                  </ul>
+              </div>
+              <div class="header-right-column">
+                  <img src="img/favicons/cart.svg" width="15" height="11" alt="Корзина">
+                  <a class="cart" href="#">Корзина</a>
+              </div>
+
+          </nav>
+      </div>
+  </header>
 
     <main class="container">
+        <div class="page-width">
       <h1 class="template-store">Магазин готовых шаблонов</h1>
-      <form action="#" method="get">
-    <fieldset> 
-      <legend class="filter">Стоимость:</legend>
-      <div class="range-filter"> 
-        <div class="range-controls">
+        <div class="main-columns">
+            <div class="main-left-column">
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend class="filter">Стоимость:</legend>
+                        <div class="range-filter">
+                            <div class="range-controls">
 
-          <div class="slidecontainer"> <!--Ползунок не работает-->
-            <input type="range" min="0" mav="150" value="150" class="slider" id="myRange">
-          </div>
+                                <div class="slidecontainer"> <!--Ползунок не работает-->
+                                    <input type="range" min="0" mav="150" value="150" class="slider" id="myRange">
+                                </div>
 
-          <div class="scale">
-            <div style="margin-left:50px; width:100px;" class="bar"></div>
-          </div>
-          <div class="toggle min-toggle"></div>
-          <div class="toggle max-toggle"></div>
-          <div class="price-controls">
-            От <input class="min-price" type="text" value="0">
-            До <input class="max-price" type="text" value="150000">
-          </div>
-        </div>
-      </div>
-    </fieldset>
-     
-    <fieldset>
-      <legend class="netting">Сетка</legend>
-      <label><input type="radio" value="adaptive" name="grid" checked>Адаптивная</label>
-      <label><input type="radio" value="fix" name="grid">Фиксированная</label>
-      <label><input type="radio" value="responsive" name="grid">Резиновая</label>
-    </fieldset>
+                                <div class="scale">
+                                    <div style="margin-left:50px; width:100px;" class="bar"></div>
+                                </div>
+                                <div class="toggle min-toggle"></div>
+                                <div class="toggle max-toggle"></div>
+                                <div class="price-controls">
+                                    От <input class="min-price" type="text" value="0">
+                                    До <input class="max-price" type="text" value="150000">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
 
-    <fieldset>
-      <legend class="peculiarities">Особенности</legend>
-      <label><input type="checkbox" name="hang" value="slider" checked>слайдер</label>
-      <label><input type="checkbox" name="hang" value="benefits">блок приемуществ</label>
-      <label><input type="checkbox" name="hang" value="news" checked>новости</label>
-      <label><input type="checkbox" name="hang" value="gallery">галерея</label>
-      <label><input type="checkbox" name="hang" value="basket">корзина</label>
-    </fieldset>
-     
-    <form action="https://echo.htmlacademy.ru/" method="get">
-      <input class="btn btn-show" type="submit" value="показать">
-    </form>
-    
-    </form>
-   <!--Хлебные крошки-->
-   <section>
-    <h3 hidden>Фильтр шаблонов. Выбор показателя для фильтрации</h3>
-    <p class="sort">Сортировать:</p>
-    <label><input class="activ-sort" type="radio" name="sort" value="price" checked>по цене</label>
-    <label><input type="radio" name="sort" value="tupe">по типу</label>
-    <label><input type="radio" name="sort" value="title">по названию</label>
-   </section>
+                    <fieldset>
+                        <legend class="netting">Сетка</legend>
+                        <label><input type="radio" value="adaptive" name="grid" checked>Адаптивная</label>
+                        <label><input type="radio" value="fix" name="grid">Фиксированная</label>
+                        <label><input type="radio" value="responsive" name="grid">Резиновая</label>
+                    </fieldset>
 
-   <div class="filter-sort__button-panel">
+                    <fieldset>
+                        <legend class="peculiarities">Особенности</legend>
+                        <label><input type="checkbox" name="hang" value="slider" checked>слайдер</label>
+                        <label><input type="checkbox" name="hang" value="benefits">блок приемуществ</label>
+                        <label><input type="checkbox" name="hang" value="news" checked>новости</label>
+                        <label><input type="checkbox" name="hang" value="gallery">галерея</label>
+                        <label><input type="checkbox" name="hang" value="basket">корзина</label>
+                    </fieldset>
 
-    <input type="radio" name="sort-btn" value="downgrade" class="visually-hidden" id="downgrade">
-       <img src="img/favicons/Downgrade.svg" width="11" height="10" alt="Вниз">
-    <label for="downgrade">  
-    </label>
-       <input type="radio" name="sort-btn" value="increase" class="visually-hidden" id="increase" checked>
-       <img src="img/favicons/Increase.svg" width="11" height="10" alt="Вверх">
-       <label for="increase">
-       </label>
-</div>
- <section class="all-project">
-    <div class="project"><!--Здесь будет слайдер-->
-      <h3 hidden>Седона</h3>
-        <div class="sedona">
-            <img src="img/templates/sedona.png">
-        </div>
-        <div class="product-info">
-          <p>Sedona</p>
-          <p>Информационный сайт для туристов</p>
-          <button class="btn btn-buy" type="button">9 990 р</button>
-        </div>
-    </div>
+                    <form action="https://echo.htmlacademy.ru/" method="get">
+                        <input class="btn btn-show" type="submit" value="показать">
+                    </form>
 
-    <div class="project"><!--Здесь будет слайдер-->
-      <h3 hidden>Пинк</h3>
-        <div class="pink">
-            <img src="img/templates/pink.png">
-        </div>
-        <div class="product-info">
-          <p>Pink App</p>
-          <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <button class="btn btn-buy" type="button">9 990 р</button>
-       </div>
-    </div>
+                </form>
+            </div>
 
-    <div class="project"><!--Здесь будет слайдер-->
-      <h3 hidden>Барбершоп</h3>
-        <div class="barbershop">
-            <img src="img/templates/barbershop.png" width="358" height="578" alt="BarberShop">
-        </div>
-    </div>
-    
-    <div class="project"><!--Здесь будет слайдер-->
-      <h3 hidden>Мишка</h3>
-        <div class="mishka">
-            <img src="img/templates/mishka.png" width="359" height="578" alt="Mishka">
-        </div>
-    </div>
-    
-    <div class="project"><!--Здесь будет слайдер-->
-      <h3 hidden>Он-лайн универ</h3>
-        <div class="onlineuniver">
-            <img src="img/templates/aplus.png" width="359" height="578" alt="OnLine Univer">
-        </div>
-    </div>
+            <div class="main-right-column">
+                <!--Хлебные крошки-->
+                <section>
+                    <h3 hidden>Фильтр шаблонов. Выбор показателя для фильтрации</h3>
+                    <p class="sort">Сортировать:</p>
+                    <label><input class="activ-sort" type="radio" name="sort" value="price" checked>по цене</label>
+                    <label><input type="radio" name="sort" value="tupe">по типу</label>
+                    <label><input type="radio" name="sort" value="title">по названию</label>
+                </section>
 
-    <div class="project"><!--Здесь будет слайдер-->
-      <h3 hidden>Кваст</h3>
-        <div class="kvast">
-            <img src="img/templates/kvast.png" width="359" height="578" alt="Кваст">
+                <div class="filter-sort__button-panel">
+
+                    <input type="radio" name="sort-btn" value="downgrade" class="visually-hidden" id="downgrade">
+                    <img src="img/favicons/Downgrade.svg" width="11" height="10" alt="Вниз">
+                    <label for="downgrade">
+                    </label>
+                    <input type="radio" name="sort-btn" value="increase" class="visually-hidden" id="increase" checked>
+                    <img src="img/favicons/Increase.svg" width="11" height="10" alt="Вверх">
+                    <label for="increase">
+                    </label>
+                </div>
+                <section class="all-project">
+                    <div class="project"><!--Здесь будет слайдер-->
+                        <h3 hidden>Седона</h3>
+                        <div class="sedona">
+                            <img src="img/templates/sedona.png">
+                        </div>
+                        <div class="product-info">
+                            <p>Sedona</p>
+                            <p>Информационный сайт для туристов</p>
+                            <button class="btn btn-buy" type="button">9 990 р</button>
+                        </div>
+                    </div>
+
+                    <div class="project"><!--Здесь будет слайдер-->
+                        <h3 hidden>Пинк</h3>
+                        <div class="pink">
+                            <img src="img/templates/pink.png">
+                        </div>
+                        <div class="product-info">
+                            <p>Pink App</p>
+                            <p>Продуктовый лендинг приложения для iOS и Android</p>
+                            <button class="btn btn-buy" type="button">9 990 р</button>
+                        </div>
+                    </div>
+
+                    <div class="project"><!--Здесь будет слайдер-->
+                        <h3 hidden>Барбершоп</h3>
+                        <div class="barbershop">
+                            <img src="img/templates/barbershop.png" width="358" height="578" alt="BarberShop">
+                        </div>
+                    </div>
+
+                    <div class="project"><!--Здесь будет слайдер-->
+                        <h3 hidden>Мишка</h3>
+                        <div class="mishka">
+                            <img src="img/templates/mishka.png" width="359" height="578" alt="Mishka">
+                        </div>
+                    </div>
+
+                    <div class="project"><!--Здесь будет слайдер-->
+                        <h3 hidden>Он-лайн универ</h3>
+                        <div class="onlineuniver">
+                            <img src="img/templates/aplus.png" width="359" height="578" alt="OnLine Univer">
+                        </div>
+                    </div>
+
+                    <div class="project"><!--Здесь будет слайдер-->
+                        <h3 hidden>Кваст</h3>
+                        <div class="kvast">
+                            <img src="img/templates/kvast.png" width="359" height="578" alt="Кваст">
+                        </div>
+                        <div class="product-info">
+                            <p>Кваст</p>
+                            <p>Промо-сайт производителя крафтового кваса</p>
+                            <button class="btn btn buy" type="button">9 990 р</button>
+                        </div>
+                    </div>
+                </section>
+                <!--Пагинация-->
+                <ul class="pagination-list">
+                    <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                    <li class="pagination-item"><a href="#">2</a></li>
+                    <li class="pagination-item"><a href="#">3</a></li>
+                    <li class="pagination-item"><a href="#">Следующая</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="product-info"> 
-          <p>Кваст</p>
-          <p>Промо-сайт производителя крафтового кваса</p>
-          <button class="btn btn buy" type="button">9 990 р</button>
-        </div>  
-    </div>
- </section>
-    <!--Пагинация-->
-    <ul class="pagination-list">
-      <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-      <li class="pagination-item"><a href="#">2</a></li>
-      <li class="pagination-item"><a href="#">3</a></li>
-      <li class="pagination-item"><a href="#">Следующая</a></li>
-    </ul>
+
 
         <section class="contacts">
             <h2 hidden>Как с нами связаться</h2>
@@ -169,9 +189,11 @@
             </form>
             <!--Добавить карту-->
         </section>
+        </div>
     </main>
 
     <footer class="footer">
+        <div class="page-width">
         <section class="footer-social">
             <h2 hidden>Мы в соц сетях</h2>
             <ul>
@@ -190,6 +212,7 @@
                 <p class="sale">Скидка 10% для друзей из социальных сетей</p>
             </div>
         </section>
+        </div>
     </footer>
 
   </body>

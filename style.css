@@ -1,0 +1,485 @@
+/* Variables */
+
+@import "css/normolize.css";
+
+:root {
+    --basic-black: #000000;
+    --basic-white: #FFFFFF;
+    --basic-red: #FB565A;
+    --hover-red: #E74246;
+    --active-red: #D7373B;
+    --basic-green: #00CA74;
+    --hover-green: #00BC6C;
+    --basic-yellow: #EFC849;
+    --hover-yellow: #EAB534;
+    --gray-social: #E1E1E1;
+    --light-gray: #EEEEEE;
+    --hover-gray: #DFDFDF;
+    --sale: #444444;
+}
+
+/* Global */
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    text-transform: none;
+  }
+
+a {
+    text-decoration: none;
+  }
+  
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Main navigation */
+
+.main-navigation {
+
+  }
+  
+  /*.main-navigation-logo {
+    
+  }*/
+
+.site-navigation {
+    display: flex;
+    list-style: none;   /*убрать стандартную стилизацию списка*/
+    line-height: 30px;
+    font-weight: 500;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 26px;
+    justify-content: space-around;
+  }
+
+.navigation {
+    padding-top: 49px;
+    /*line-height: 30px;*/
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+.header-left-column {
+    flex-grow: 2;
+
+}
+.header-center-column {
+    flex-grow: 6;
+}
+.header-right-column {
+    flex-grow: 2;
+}
+.cart {
+    line-height: 30px;
+    font-weight: 500;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--basic-black);
+  }
+
+  /* User navigation */
+
+
+.site-navigation a {
+    color: var(--basic-black);
+}
+
+.cart:hover,
+.site-navigation a:hover { /*наведение*/
+    color: var(--basic-red);
+}
+
+.cart,
+.site-navigation a:active { /*нажатие*/
+    color: var(--light-gray);
+}
+
+.cart,
+.site-navigation a:focus { /*активный*/
+    color: var(--basic-black);
+  /*подчеркивание*/
+}
+
+.motto {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;  
+}
+
+.about {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.btn {
+    font: inherit;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-red);
+    border-radius: 3px;
+    border: none;
+}
+
+.btn-width {
+    width: 240px;
+}
+
+.btn:hover {
+     background-color: var(--hover-red);
+}
+
+.btn:active {
+    background-color:var(--active-red) ;
+}
+
+.btn.disabled,
+.bth:disabled {
+    cursor: default;
+    background-color: var(--basic-red);
+}
+
+/*Services-list*/
+
+.services-list {
+    list-style: none;
+}
+
+.services-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.services-item p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.btn.to-order-red {   /*как прописывать поведение?*/
+    background-color: var(--basic-red);
+}
+
+.to-order-red:hover {
+    background-color: var(--hover-red);
+}
+
+.btn.to-order-green {
+    background-color: var(--basic-green);
+}
+
+.to-order-green:hover {
+    background-color: var(--hover-green);
+}
+
+.btn.to-order-yellow {
+    background-color: var(--basic-yellow);
+}
+
+.to-order-yellow:hover {
+    background-color: var(--hover-yellow);
+}
+
+/*About company*/
+
+.about-company-tagline {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.about-company {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.orders {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.orders-list,
+.orders-item {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.orders-item::before {
+    width: 10px;
+    height: 10px;
+    color: var(--basic-red);
+    content: "—";
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.statistics {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.statistics-percent {
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: 700;
+}
+
+.statistics-definition {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+/*Logo-list*/
+
+/*Contacts*/
+
+.name-to-address {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.address {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.contacts-phone {
+    color: inherit;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.btn.btn-write-to-us {
+    background-color: var(--basic-red);
+}
+
+.btn-write-to-us:hover {
+    background-color: var(--hover-red);
+}
+
+/*Main-footer*/
+
+/* Social button */
+
+.social-button {
+    background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+    color: inherit;
+    width: 81px;
+    height: 81px;
+    border-radius: 40.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-button:hover {
+    background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+}
+.social-button:active {
+    background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.main-footer-logo {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.sale {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--sale);
+}
+
+/* Modal */
+
+.modal-feedback h2 {
+    font-size: 45px;
+    line-height: 53px;
+    font-weight: 700;
+}
+
+.login-user,
+.email-user,
+.text-user {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.btn.btn-to-send {
+    background-color: var(--basic-red);
+}
+
+.btn-to-send:hover {
+    background-color: var(--hover-red);
+}
+
+/*==========================================*/
+/*Header*/
+.header-inner-page {
+    background-color: var(--light-gray);
+}
+
+.site-navigation-inner-page {
+    list-style: none;   /*убрать стандартную стилизацию списка*/
+    line-height: 30px;
+    font-weight: 500;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+cart,
+.site-navigation-inner-page a:hover { /*наведение*/
+    color: var(--basic-red);
+}
+
+.active {
+
+}
+ 
+/*Main*/
+
+.template-store {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    background-color: var(--light-gray);
+}
+
+.filter,
+.netting,
+.peculiarities,
+.sort {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.btn-show {
+    background-color: var(--light-gray);
+    color: var(--basic-black);
+}
+
+.btn-show:hover {
+    background-color: var(--hover-gray);
+}
+
+/*Project*/
+.all-project {
+    display: flex;
+}
+
+.project {
+    position: relative;
+    width: 359px;
+    height: 578px;
+}
+
+.sedona, .pink, .barbershop, .mishka, .onlineuniver, .kvast {
+    position: absolute;
+    /*width: 359px;
+    height: 578px;*/
+
+}
+
+.page-width{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.main-columns {
+   display: flex;
+}
+.main-left-column{
+    display: flex;
+    flex-grow: 1;
+
+}
+.main-right-column {
+    display: flex;
+    flex-grow: 3;
+}
+
+.product-info
+  {
+    position: absolute;
+    bottom: 0;
+    width: 360px;
+    height: 231px;
+
+    background-color: var(--light-gray);
+    text-align: center;
+    vertical-align: middle;
+  }
+
+/* Pagination */
+
+.pagination-list {
+  list-style: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.pagination-item a {
+    color: var(--basic-black);
+    background-color: var(--light-gray);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 3px solid var(--light-gray);
+    margin: 0 4px;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+  background-color: var(--basic-white);
+}
+
+/*Contacts*/
+
+/*Footer*/
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
